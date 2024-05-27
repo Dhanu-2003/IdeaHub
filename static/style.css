@@ -184,7 +184,7 @@ cursor: pointer;
 }
 
 .text2:hover{
-    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); Add shadow on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
     border: 1px solid black;
     padding-left: 2%;
     padding-top: 0.5%;
