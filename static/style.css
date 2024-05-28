@@ -215,7 +215,7 @@ cursor: pointer;
         width: 23%;
         height:2%;
         margin-top: -9.5%; /* Remove negative margin-top */
-    margin-left: 7%;
+        margin-left: 10% ;
     }
     .login-container{
         width: 50%;
@@ -239,9 +239,10 @@ cursor: pointer;
     }
     .black-box{
         
-        margin-top: 0%;
-        margin-bottom: 0%;
-        
+         /* Adjust height of black box */
+        margin-top: 0% !important;
+        margin-bottom: 0% !important;
+       
     }
     .forget1{
         font-size: 10px;
@@ -256,12 +257,18 @@ cursor: pointer;
     .login-form label{
         margin-top: -15%;
         padding: 14%;
+        margin-left: 5%;
     }
-    .basictxt{
+    .basictxt-signup{
         margin-top: 29% !important;
-        font-size: 10px;
+        font-size: 10px ;
         white-space:normal;
         word-wrap:break-word;
+    }
+    .basictxt-contact{
+        margin-top: 28%;
+        font-size: 20px !important;
+        margin-left: 25% !important;
     }
     .button1{
         width: 50%;
