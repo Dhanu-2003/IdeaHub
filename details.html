@@ -79,6 +79,43 @@
            
            
         }
+        .scrollable {
+            overflow-x: auto;
+        }
+        .line{
+            width: 100%;
+            height: 0%;
+            box-shadow:0 0 7px 5px rgba(143, 23, 23, 0.1) ;
+            
+        }
+        table {
+            width: 100%;
+            overflow-x: scroll;
+            border-collapse: collapse;
+        }
+        .button1{
+            height:50%;
+        }
+        td {
+            padding: 10px;
+            vertical-align: middle;
+            padding-left: 5%;
+        }
+        input[type="text"], select, input[list] {
+            width: 90%;
+            padding: 8px;
+            margin: 4px 0;
+            box-sizing: border-box;
+        }
+        input::placeholder{
+            padding-left: 12%;
+        }
+        .wide-table {
+            width: 200%;
+        }
+        .large{
+            height: 15% !important;
+        }
        
         #requestbutton{
             background-color: #CD5C5C;
@@ -121,70 +158,121 @@
             
             <div class="black-box" style="margin-top: 37.5%;"><P class="basictxt" style="color: white; font-size:37px; margin-left:40%; font-style:italic;font-weight:bold;">CONTACT DETAILS</P></div>
             <p class="login" style="margin-top: -41%;margin-left:46%">DETAILS</p>
-            <div class="box" style="display:flex;flex-direction: column;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);height:65%">
-                <div style="flex-direction: row;">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" required>
-                <label for="fname">Last Name</label>
-                <input type="text" id="lname" name="lname" required>
-                <label for="fname">Gender</label>
-                    <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="non-binary">Non-Binary</option>
-                        <option value="prefer-not-to-say">Prefer not to say</option>
-                    </select>
+            <div class="box" style="overflow-x:scroll; display:flex;flex-direction: column;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);height:65%">
                 
-                </div>
-                <div style="flex-direction: row;">
-                    <label for="fname" style="margin-top: 5%;">Email</label>
-                <input type="text" id="email" name="email" required>
-                    
-                    <button class="button1" style="width: 8%;height:40%;color:black;margin-left:5%;letter-spacing:1px">Get OTP</button>
-                    <input style="width: 4%;margin-left:4%" type="text" id="otp" name="otp" placeholder="otp"required>
-                    <label for="degree" style="margin-top: 5%;">Degree</label>
-                    <input type="text" id="degree" name="degree" required>
-                    
-                </div>
-                <div style="flex-direction: row;">
-                    <label for="phoneno">Mobile Number</label>
-                    <input type="text" id="pno" name="pno" required>
-                    <label for="college" style="margin-top: 5%;">College</label>
-                    <input type="text" id="college" name="college" required>
-                    <label  for="fname">YOG</label>
-                    <input style="width: 4%;"list="yog1" id="yog" name="yog" required>
-                    <datalist id="yog1">
-                        <script>
-                            for(let i=1;i<=5;i++){
-                                document.write(`<option value="${i}">`)
-                            }
-                        </script>
-                    </datalist>
-                    <label for="age" style="margin-top: 5%;">Age</label>
-                    <input style="width: 4%;"list="age1" id="age" name="age" required>
-                    <datalist id="age1" >
-                        <!-- Generate age options from 1 to 100 -->
-                        <script>
-                            for (let i = 1; i <= 100; i++) {
-                                document.write(`<option value="${i}">`);
-                            }
-                        </script>
-                    </datalist>
-                    </div>
-                    <div style="flex-direction: row;">
-                        <label for="address">Address</label>
-                        <input style="width: 80%;" type="text" id="address" name="address" required>
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name</label></td>
+                        <td><input type="text" id="fname" name="fname" required></td>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="lname" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            <select id="gender" name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="non-binary">Non-Binary</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </td>
+                        <td><label for="email">Email</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="otp">OTP</label></td>
+                        <td>
+                            <input class="ph" style="width: 20%;" type="text" id="otp" name="otp" placeholder="OTP" required>
+                            <button class="button1"style="margin-left: 20%;"  type="button">Get OTP</button>
+                        </td>
+                        <td><label for="age">Age</label></td>
+                        <td>
+                            <input style="width: 30%;margin-left:-10%" list="age1" id="age" name="age" required>
+                            <datalist id="age1">
+                                <script>
+                                    for (let i = 1; i <= 100; i++) {
+                                        document.write(`<option value="${i}">`);
+                                    }
+                                </script>
+                            </datalist>
+                        </td>
                         
-                        </div>
+                    </tr>
+                    <tr>
+                        <td><label for="degree">Degree</label></td>
+                        <td><input type="text" id="degree" name="degree" required></td>
+                        <td><label for="pno">Mobile Number</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="pno" name="pno" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="college">College</label></td>
+                        <td><input type="text" id="college" name="college" required></td>
+                        <td><label  for="yog">YOG</label></td>
+                        <td>
+                            <input style="width:30%;margin-left:-10%" style="width: 50%;" list="yog1" id="yog" name="yog" required>
+                            <datalist id="yog1">
+                                <script>
+                                    for (let i = 1; i <= 5; i++) {
+                                        document.write(`<option value="${i}">`);
+                                    }
+                                </script>
+                            </datalist>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4"><div class="line"></div></td>
+                    </tr>
+                </table>
+                    <table>
 
-                        <div style="flex-direction: row;">
-                            <label for="password">Password</label>
-                            <input  type="text" id="pass" name="password" required>
-                            <label style="margin-left:10%;" for="cpassword"> Confirm Password</label>
-                            <input   type="text" id="cpass" name="Confirm" required>
-                            
-                            </div>
-                            <button class="button1" style="width: 8%;">Sign Up</button>
+                    <tr>
+                        <td>
+                            <label style="font-weight: bold;" for="address">Address</label>
+                        </td>
+                    </tr>
+                    <tr><td style="width:15%">
+                        <label for="dn">Door No</label>
+                    </td>
+                    <td><input style="width: 30%;margin-left:0%" type="text" id="dn" name="dn" required></td>
+                    <td>
+                        <label for="street">Street</label>
+                    </td>
+                    <td><input type="text" id="street" name="street" required></td>
+                    <td>
+                        <label for="area">Area</label>
+                    </td>
+                    <td><input type="text" id="area" name="area" required></td>
+                    </tr>
+
+                    <tr><td>
+                        <label for="city">City</label>
+                    </td>
+                    <td><input type="text" id="city" name="city" required></td>
+                    <td>
+                        <label for="state">State</label>
+                    </td>
+                    <td><input type="text" id="state" name="state" required></td>
+                    <td>
+                        <label for="pincode">Pincode</label>
+                    </td>
+                    <td><input type="text" id="pincode" name="pincode" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"><div class="line"></div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td><input type="text" id="pass" name="password" required></td>
+                        <td><label for="cpass">Confirm Password</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="cpass" name="cpass" required></td>
+                    </tr>
+                    
+                </table>
+                            <button class="button1 " style="width: 6%;margin-top:2%;margin-bottom:2%;margin-left:50%; ">Sign Up</button>
             </div>
 
            
