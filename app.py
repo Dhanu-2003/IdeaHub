@@ -2,6 +2,17 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    product = [
+        {"S_NO": 1, "COMPONENT": "Component 1", "COST": 100, "COUNT": 2, "TOTAL": 200},
+        {"S_NO": 2, "COMPONENT": "Component 2", "COST": 150, "COUNT": 1, "TOTAL": 150},
+        {"S_NO": 3, "COMPONENT": "Component 3", "COST": 200, "COUNT": 3, "TOTAL": 600},
+        
+    ]
+    return render_template('product.html', products=product)
+
+
 @app.route("/logout")
 def logout():
     return "Logout"
@@ -48,7 +59,13 @@ def placeorder():
 
 @app.route("/product")
 def product():
-    return "product"
+    product = [
+        {"S_NO": 1, "COMPONENT": "Component 1", "COST": 100, "COUNT": 2, "TOTAL": 200},
+        {"S_NO": 2, "COMPONENT": "Component 2", "COST": 150, "COUNT": 1, "TOTAL": 150},
+        {"S_NO": 3, "COMPONENT": "Component 3", "COST": 200, "COUNT": 3, "TOTAL": 600}
+    ]
+    return render_template('product.html', products=product)
+    
 
 @app.route("/return")
 def return_pro():

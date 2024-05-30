@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, IE=chrome" />
+        <title>PROTOTYPE</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <style>
+        .check{
+            
+            margin-top: -30%;
+            margin-left: 56%;
+        }
+       
+        .search{
+            position: absolute;
+            width: 20%;
+            height: 5%;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin-top: -3%;
+            margin-left: 10%;
+            padding-left: 0.5%;
+            
+        }
+        input::placeholder{
+            font-size: 20px;
+            transform: translateY(2px);
+        }
+        #search{
+            font-size: 15px;
+        }
+        .small-box{
+            width: 20%;
+            height: 30vh;
+            border-radius: 30px;
+            border: 2px solid black;
+            margin-top: 0%;
+            margin-left: 2%;
+            margin-bottom: 1%;
+        }
+        .box1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: space-around;
+            margin-left: -2%;
+            margin-top: 2%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .mini-buttons{
+            
+            
+            width: 10%;
+            height: 5%;
+            margin-top: -4%;
+            margin-left: -1%;
+            color: white;
+            border-radius: 20px;
+            border: 1px solid #CD5C5C;
+            padding-top: 0.2%;
+            cursor: pointer;
+            padding-left: 0.8%;
+            justify-content: right;
+            
+        }
+        .mini-buttons:hover{
+            filter: brightness(1.2);
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+           
+           
+           
+        }
+        .scrollable {
+            overflow-x: auto;
+        }
+        .line{
+            width: 100%;
+            height: 0%;
+            box-shadow:0 0 7px 5px rgba(143, 23, 23, 0.1) ;
+            
+        }
+        .in{
+            display:block !important;
+            width:15% !important;
+            height:25px !important;
+            
+        }
+       
+        .button1{
+            height:50%;
+        }
+        table.styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 0%;
+            font-size: 18px;
+            text-align: left;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        table.styled-table thead tr {
+            background-color: #df6e6e;
+            background-image: linear-gradient(#CD5C5C);
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        table.styled-table th,
+        table.styled-table td {
+            padding: 12px 15px;
+            border: 1px solid #dddddd;
+        }
+        
+        table.styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        
+        table.styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        
+        table.styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #CD5C5C;
+        }
+        
+        table.styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+        input[type="text"], select, input[list] {
+            width: 100%;
+            padding: 8px;
+            margin: 4px 0;
+            box-sizing: border-box;
+        }
+        input::placeholder{
+            padding-left: 12%;
+        }
+        .wide-table {
+            width: 200%;
+        }
+        .large{
+            height: 15% !important;
+        }
+       
+        #requestbutton{
+            background-color: #CD5C5C;
+        }
+        #requestbutton.processing{
+            background-color: #FFC700;
+            padding-left: 0.5%;
+
+        }
+        #requestbutton.successful{
+            background-color: #32A730;
+            padding-left: 0.5%;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div class="redtop">
+                <div class="black-box" style="margin-top: 0%;height:15%;">
+                    
+                <!-- Red rectangle -->
+                <div class="semi-circle">
+                    <!-- Red rectangle -->
+                    
+                </div>
+                
+                <p class="text1">LOGO</p>
+                <P style="color: white; margin-top:-17.9vh; margin-left:50%;">SLOGAN</P>
+                </div>
+                <div class="cart-sec">
+                    <button class="text2 no-hover" style="width: fit-content;">PROTOTYPE</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">COMPONENTS</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">CART</button>
+                    <button class="text2 no-hover" style="border-radius: 0 0 0 0;">ORDERS</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">PROFILE</button>
+                    <button class="text2 no-hover" style="border-radius: 0 0 30px 0;">LOGOUT</button>
+                </div>
+                
+                <div class="semi-circle" style="margin-left:95%;margin-top:-5.3%;background-color:white;"></div>
+            </div>
+            
+            <div class="black-box" style="margin-top: 37.5%;"><P class="basictxt" style="color: white; font-size:37px; margin-left:40%; font-style:italic;font-weight:bold;">CONTACT DETAILS</P></div>
+            <p class="login" style="margin-top: -41%;margin-left:46%">PRODUCT</p>
+            <div class="box" style="display:flex;flex-direction: column;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);height:65%">
+                <p  style="margin-top=-1%;margin-left:44%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold">PRODUCT LIST</p>
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>S_NO</th>
+                            <th>COMPONENT</th>
+                            <th>COST</th>
+                            <th>COUNT</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in products %}
+                        <tr>
+                          
+                          <td>{{user.S_NO}}</td>
+                          <td>{{user.COMPONENT}}</td>
+                          <td>{{user.COST}}</td>
+                          <td>{{user.COUNT}}</td>
+                          <td>{{user.TOTAL}}</td>
+                          
+                           
+                        </tr>
+                      {% endfor %}
+                      <tr>
+                        <td colspan="4">Pay 2199 while placing order and get 1827 back on returning order at working condition Get ₹100 for Every Friend's Purchase!</td>
+                        
+                        <td>200</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <p  style="margin-left:3%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold">BILLING DETAILS</p>
+                <div class="login-container" style="margin-left:3%;margin-top:0%;border:1px solid black;box-shadow:None;height:55%">
+                    
+                    <table style="margin-top:-2%">
+                        <tr>
+                            <td><label for="Name">Name</label></td>
+                            <td><input style="width:100%" type="text" id="Name" name="Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Organization">Organization</label></td>
+                            <td><input type="text" id="Organization" name="Organization" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Address Line 1">Address Line 1</label></td>
+                            <td><input  type="text" id="Address Line 1" name="Address Line 1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Address Line 2">Address Line 2</label></td>
+                            <td><input  type="text" id="Address Line 2" name="Address Line 2" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Address Line 3">Address Line 3</label></td>
+                            <td><input  type="text" id="Address Line 3" name="Address Line 3" required></td>
+                        </tr>
+                        <tr>
+                            <td style="width:50%"><label  for="Phone Number">Phone Number</label></td>
+                            <td><input  type="text" id="Phone Number" name="Phone Number" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Mail ID">Mail ID</label></td>
+                            <td><input  type="text" id="Mail ID" name="Mail ID" required></td>
+                        </tr>
+                    </table>
+                   
+                </div>
+                <div class="login-container" style="margin-left:50%;margin-top:-28.5%;border:1px solid black;box-shadow:None;height:55%">
+                    
+                    <table>
+                        <P style="margin-top:-2%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold"> REFERRED BY</P>
+                        <tr>
+                            <td style="width:40%"><label for="User ID">User ID</label></td>
+                            <td><input style="width:100%" type="text" id="User ID" name="User ID" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Ph No">Ph No</label></td>
+                            <td><input type="text" id="Ph No" name="Ph No" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="login-container" style="width:85%;margin-left:3%;margin-top:15%;border:1px solid black;box-shadow:None;height:100%">
+                    
+                    
+                </div>
+                            <button class="button1" style="width: 8%;height:10%;margin-top:2%;margin-bottom:2%;margin-left:50%; ">Place Order</button>
+            </div>
+
+           
+            
+                
+            
+            
+        </div>
+    </body>
+
+</html>
+<script>
+    // Get the select element
+    var ageSelect = document.getElementById("age");
+    
+    // Generate options dynamically using a loop
+    for (var i = 18; i <= 50; i++) {
+        // Create a new option element
+        var option = document.createElement("option");
+        
+        // Set the value and text of the option
+        option.value = i;
+        option.textContent = i;
+        
+        // Append the option to the select element
+        ageSelect.appendChild(option);
+    }
+</script>
+<script>
+    function handlerequest(button){
+        
+        button.textContent='PROCESSING';
+        button.classList.remove('successful');
+        button.classList.add('processing');
+        setTimeout(function(){
+            button.textContent='REMOVED';
+            
+            button.classList.remove('processing');
+            button.classList.add('successful');
+        },2000)
+    }
+</script>
