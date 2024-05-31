@@ -123,17 +123,34 @@
             <p class="login" style="margin-top: -41%;margin-left:46%">DETAILS</p>
             <div class="box" style="display:flex;flex-direction: column;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);height:65%">
                 <div style="flex-direction: row;">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" required>
-                <label for="fname">Last Name</label>
-                <input type="text" id="lname" name="lname" required>
-                <label for="fname">Gender</label>
-                    <select id="gender" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="non-binary">Non-Binary</option>
-                        <option value="prefer-not-to-say">Prefer not to say</option>
-                    </select>
+                    <table style="margin: 10px;border: 10px;justify-content: center;">
+                        <tr>
+                            <td>
+                                <label for="fname">First Name</label>
+                            </td>
+                            <td>
+                                <input style="width: max-content;" type="text" id="fname" name="fname" required>
+                            </td>
+                            <td>
+                                <label for="fname">Last Name</label>
+                            <td>
+                                <input style="width: max-content;" type="text" id="lname" name="lname" required>
+                            </td>
+                            <td>
+                                <label for="fname">Gender</label>
+                            </td>
+                            <td>
+                                <select id="gender" name="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="non-binary">Non-Binary</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                
+                
                 
                 </div>
                 <div style="flex-direction: row;">
