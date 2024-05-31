@@ -10,7 +10,7 @@ def home():
         {"S_NO": 3, "COMPONENT": "Component 3", "COST": 200, "COUNT": 3, "TOTAL": 600},
         
     ]
-    return render_template('product.html', products=product)
+    return render_template('place_order.html', products=product)
 
 
 @app.route("/logout")

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, IE=chrome" />
+        <title>PROTOTYPE</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <style>
+        .check{
+            
+            margin-top: -30%;
+            margin-left: 56%;
+        }
+       
+        .search{
+            position: absolute;
+            width: 20%;
+            height: 5%;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin-top: -3%;
+            margin-left: 10%;
+            padding-left: 0.5%;
+            
+        }
+        input::placeholder{
+            font-size: 20px;
+            transform: translateY(2px);
+        }
+        #search{
+            font-size: 15px;
+        }
+        .small-box{
+            width: 20%;
+            height: 30vh;
+            border-radius: 30px;
+            border: 2px solid black;
+            margin-top: 0%;
+            margin-left: 2%;
+            margin-bottom: 1%;
+        }
+        .box1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            justify-content: space-around;
+            margin-left: -2%;
+            margin-top: 2%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .mini-buttons{
+            
+            
+            width: 10%;
+            height: 5%;
+            margin-top: -4%;
+            margin-left: -1%;
+            color: white;
+            border-radius: 20px;
+            border: 1px solid #CD5C5C;
+            padding-top: 0.2%;
+            cursor: pointer;
+            padding-left: 0.8%;
+            justify-content: right;
+            
+        }
+        .mini-buttons:hover{
+            filter: brightness(1.2);
+        }
+        .button-container{
+            display: flex;
+            flex-direction: row;
+           
+           
+           
+        }
+        .scrollable {
+            overflow-x: auto;
+        }
+        .line{
+            width: 100%;
+            height: 0%;
+            box-shadow:0 0 7px 5px rgba(143, 23, 23, 0.1) ;
+            
+        }
+        table {
+            width: 100%;
+            overflow-x: scroll;
+            border-collapse: collapse;
+        }
+        .button1{
+            height:50%;
+        }
+        td {
+            padding: 10px;
+            vertical-align: middle;
+            padding-left: 5%;
+        }
+        input[type="text"], select, input[list] {
+            width: 90%;
+            padding: 8px;
+            margin: 4px 0;
+            box-sizing: border-box;
+        }
+        input::placeholder{
+            padding-left: 12%;
+        }
+        .wide-table {
+            width: 200%;
+        }
+        .large{
+            height: 15% !important;
+        }
+       
+        #requestbutton{
+            background-color: #CD5C5C;
+        }
+        #requestbutton.processing{
+            background-color: #FFC700;
+            padding-left: 0.5%;
+
+        }
+        #requestbutton.successful{
+            background-color: #32A730;
+            padding-left: 0.5%;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div class="redtop">
+                <div class="black-box" style="margin-top: 0%;height:15%;">
+                    
+                <!-- Red rectangle -->
+                <div class="semi-circle">
+                    <!-- Red rectangle -->
+                    
+                </div>
+                
+                <p class="text1">LOGO</p>
+                <P style="color: white; margin-top:-17.9vh; margin-left:50%;">SLOGAN</P>
+                </div>
+                <div class="cart-sec">
+                    <button class="text2 no-hover" style="width: fit-content;">PROTOTYPE</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">COMPONENTS</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">CART</button>
+                    <button class="text2 no-hover" style="border-radius: 0 0 0 0;">ORDERS</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">PROFILE</button>
+                    <button class="text2 no-hover" style="border-radius: 0 0 30px 0;">LOGOUT</button>
+                </div>
+                
+                <div class="semi-circle" style="margin-left:95%;margin-top:-5.3%;background-color:white;"></div>
+            </div>
+            
+            <div class="black-box" style="margin-top: 37.5%;"><P class="basictxt" style="color: white; font-size:37px; margin-left:40%; font-style:italic;font-weight:bold;">CONTACT DETAILS</P></div>
+            <p class="login" style="margin-top: -41%;margin-left:46%">DETAILS</p>
+            <div class="box" style="overflow-x:scroll; display:flex;flex-direction: column;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);height:65%">
+                
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name</label></td>
+                        <td><input type="text" id="fname" name="fname" required></td>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="lname" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            <select id="gender" name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="non-binary">Non-Binary</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </td>
+                        <td><label for="email">Email</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="otp">OTP</label></td>
+                        <td>
+                            <input class="ph" style="width: 20%;" type="text" id="otp" name="otp" placeholder="OTP" required>
+                            <button class="button1"style="margin-left: 20%;"  type="button">Get OTP</button>
+                        </td>
+                        <td><label for="age">Age</label></td>
+                        <td>
+                            <input style="width: 30%;margin-left:-10%" list="age1" id="age" name="age" required>
+                            <datalist id="age1">
+                                <script>
+                                    for (let i = 1; i <= 100; i++) {
+                                        document.write(`<option value="${i}">`);
+                                    }
+                                </script>
+                            </datalist>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label for="degree">Degree</label></td>
+                        <td><input type="text" id="degree" name="degree" required></td>
+                        <td><label for="pno">Mobile Number</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="pno" name="pno" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="college">College</label></td>
+                        <td><input type="text" id="college" name="college" required></td>
+                        <td><label  for="yog">YOG</label></td>
+                        <td>
+                            <input style="width:30%;margin-left:-10%" style="width: 50%;" list="yog1" id="yog" name="yog" required>
+                            <datalist id="yog1">
+                                <script>
+                                    for (let i = 1; i <= 5; i++) {
+                                        document.write(`<option value="${i}">`);
+                                    }
+                                </script>
+                            </datalist>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4"><div class="line"></div></td>
+                    </tr>
+                </table>
+                    <table>
+
+                    <tr>
+                        <td>
+                            <label style="font-weight: bold;" for="address">Address</label>
+                        </td>
+                    </tr>
+                    <tr><td style="width:15%">
+                        <label for="dn">Door No</label>
+                    </td>
+                    <td><input style="width: 30%;margin-left:0%" type="text" id="dn" name="dn" required></td>
+                    <td>
+                        <label for="street">Street</label>
+                    </td>
+                    <td><input type="text" id="street" name="street" required></td>
+                    <td>
+                        <label for="area">Area</label>
+                    </td>
+                    <td><input type="text" id="area" name="area" required></td>
+                    </tr>
+
+                    <tr><td>
+                        <label for="city">City</label>
+                    </td>
+                    <td><input type="text" id="city" name="city" required></td>
+                    <td>
+                        <label for="state">State</label>
+                    </td>
+                    <td><input type="text" id="state" name="state" required></td>
+                    <td>
+                        <label for="pincode">Pincode</label>
+                    </td>
+                    <td><input type="text" id="pincode" name="pincode" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"><div class="line"></div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td><input type="text" id="pass" name="password" required></td>
+                        <td><label for="cpass">Confirm Password</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="cpass" name="cpass" required></td>
+                    </tr>
+                    
+                </table>
+                            <button class="button1" style="width: 6%;margin-top:2%;margin-bottom:2%;margin-left:50%; ">Sign Up</button>
+            </div>
+
+           
+            
+                
+            
+            
+        </div>
+    </body>
+
+</html>
+<script>
+    // Get the select element
+    var ageSelect = document.getElementById("age");
+    
+    // Generate options dynamically using a loop
+    for (var i = 18; i <= 50; i++) {
+        // Create a new option element
+        var option = document.createElement("option");
+        
+        // Set the value and text of the option
+        option.value = i;
+        option.textContent = i;
+        
+        // Append the option to the select element
+        ageSelect.appendChild(option);
+    }
+</script>
+<script>
+    function handlerequest(button){
+        
+        button.textContent='PROCESSING';
+        button.classList.remove('successful');
+        button.classList.add('processing');
+        setTimeout(function(){
+            button.textContent='REMOVED';
+            
+            button.classList.remove('processing');
+            button.classList.add('successful');
+        },2000)
+    }
+</script>
