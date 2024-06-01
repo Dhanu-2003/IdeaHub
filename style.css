@@ -1,0 +1,374 @@
+.slogan {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.top {
+    color: white;
+}
+
+.header {
+    display: flex;
+    height: 90px;
+    background-color: #CD5C5C;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.semi-circle {
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    border-radius: 55px;
+    position: absolute;
+    left: -45px;
+    top: -19px;
+}
+
+.semi-circle-2 {
+    height: 110px;
+    width: 110px;
+    background-color: white;
+    border-radius: 55px;
+    position: absolute;
+    right: -45px;
+    top: -19px;
+}
+
+.logo-cont {
+    font-size: larger;
+    position: relative;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-bar {
+    font-size: larger;
+    background-color: white;
+    position: absolute;
+    right: 80px;
+    top: 45px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    height: 30px;
+    width: 500px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 0 10px rgb(95, 94, 94);
+    border: 1px solid black;
+    justify-content: space-around;
+}
+
+.Logout {
+    font-size: large;
+    z-index: 1;
+    position: absolute;
+    right: 120px;
+    top: 80px;
+}
+
+.profile {
+    font-size: large;
+    z-index: 1;
+    position: absolute;
+    right: 120px;
+    top: 20px;
+}
+
+.name {
+    font-size: large;
+    z-index: 1;
+    position: absolute;
+    right: 500px;
+    top: 20px;
+}
+
+.name-1 {
+    font-size: large;
+    z-index: 1;
+    position: absolute;
+    right: 120px;
+    top: 80px;
+    display: none;
+}
+
+.mobile-header {
+    display: none;
+}
+
+
+.com-label,
+.pro-label,
+.car-label,
+.or-label {
+    display: none;
+    ;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -15px;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    border-radius: 20px 20px 40px 40px;
+    border: 1px solid black;
+}
+
+.sec-lab {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    height: 70%;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 15%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.text {
+    position: absolute;
+    height: 40px;
+    width: 400px;
+    border-radius: 30px;
+
+    font-size: larger;
+
+}
+
+
+.cus-pro-but {
+    position: absolute;
+    background-color: #CD5C5C;
+    color: white;
+    width: 200px;
+    height: 45px;
+    right: 0%;
+    border-radius: 30px;
+    font-size: medium;
+}
+
+.product {
+    position: absolute;
+    display: flex;
+    height: 83%;
+    width: 90%;
+    top: 15%;
+    background-color: F2F4F9;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    overflow-y: auto;
+
+}
+
+.prototype {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.pro-img {
+    height: 200px;
+    width: 230px;
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+.title{
+    position: absolute;
+    top: 65%;
+    display: flex;
+    justify-content: flex-start;
+  
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 90%;
+       
+}
+.det-but{
+    position: absolute;
+    background-color: #CD5C5C;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    width: 50%;
+    height: 10%;
+    top: 93%;
+}
+
+@media screen and (max-width:750px) {
+
+    .name,
+    .nav-bar {
+        display: none;
+    }
+
+    .name-1 {
+        display: inline;
+        position: absolute;
+        right: 130px;
+        top: 48px;
+    }
+
+    .sec-div,
+    .sec-lab,
+    .section {
+        top: 20px;
+    }
+
+    .mobile-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 25%;
+        background-color: white;
+        height: 10px;
+        border-bottom: 1px solid black;
+        justify-content: space-around;
+        padding: 15px;
+    }
+
+    .com-label,
+    .pro-label,
+    .car-label,
+    .or-label {
+        font-size: large;
+        display: inline;
+    }
+    .main{
+        top:5%;
+    }
+    .search{
+        display: block;
+    }
+    .text{
+        width:100%
+    }
+    .cus-pro-but{
+        top:70%;
+        width:100%;
+    }
+    .product{
+        top:20%;
+    }
+
+}
+
+@media screen and (max-width:360px) {
+    .mobile-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 25%;
+        background-color: white;
+        height: 40px;
+        border-bottom: 1px solid black;
+        justify-content: space-around;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+    display: flex;
+    cursor: pointer;
+
+}
+
+.cont1 {
+    background-color: black;
+    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.cont2 {
+    background-color: blue;
+    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.cont3 {
+    background-color: yellow;
+    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.cont4 {
+    background-color: red;
+    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.cont2:hover,
+.cont3:hover,
+.cont4:hover {
+    height: 250px;
+    width: 250px;
+    background-color: gray;
+}
+
+* {
+    margin: 20px
+} */
