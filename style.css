@@ -225,6 +225,7 @@
     width: 50%;
     height: 10%;
     top: 93%;
+    border: 1px solid black;
 }
 
 @media screen and (max-width:750px) {
