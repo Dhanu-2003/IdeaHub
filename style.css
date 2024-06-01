@@ -169,6 +169,7 @@
     border-radius: 30px;
     border: 1px solid black;
     font-size: medium;
+    
 }
 
 .product {
@@ -226,6 +227,7 @@
     height: 10%;
     top: 93%;
     border: 1px solid black;
+    cursor:pointer;
 }
 
 @media screen and (max-width:750px) {
