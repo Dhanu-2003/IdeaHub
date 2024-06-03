@@ -23,6 +23,15 @@ body, html {
         margin-left: 3%;
     
 }
+.header{
+    font-family:system-ui, -apple-system;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 0%;
+    font-size: 20px;
+    
+
+}
 .redtop{
     position:relative;
     display: flex;
@@ -31,22 +40,48 @@ body, html {
     background-color: #CD5C5C;
 }
 .box{
+    position: absolute;
     width: 80%;
     height: 60%;
+    margin-top: 100px   ;
     border-radius: 0 0 0 0;
     background-color: #FFFFFF;
-    
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 10%;
     overflow-y: auto;
-    justify-content: baseline;
+    justify-content: space-around;
 }
+.small-box{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+    
+}
+.det-but{
+    position: absolute;
+    background-color: #CD5C5C;
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    width: 50%;
+    height: 10%;
+    top: 93%;
+    border: 1px solid black;
+    cursor:pointer;
+}
+
 .semi-circle{
     width: 10%;
     height: 99%;
     top: -1px;
     margin-left: -6%;
-    
-    
     border-radius: 50%;
     background-color: #FFFFFF;
 
@@ -187,6 +222,12 @@ cursor: pointer;
 .button1:hover{
     transform: scale(1.1);
 }
+.black-box-top{
+    width: 100%;
+    height:7%;
+    background-color: black;
+    margin-top: 7.5%;
+}
 .black-box{
     width: 100%;
     height:7%;
@@ -207,14 +248,25 @@ cursor: pointer;
     text-decoration: underline;
     color: black;
 }
+.semi-circle-2{
+    position:absolute;
+    width: 10%;
+    height: 99%;
+    margin-left: 96%;
+    top: -1px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    justify-content: center;
+}
 
 .cart-sec{
+    position: absolute;
     display: flex;
     border-radius: 0 0 30px 30px;
     flex-direction: row;
     padding: 0%;
-    margin-top: 2.5%;
-    margin-left: 66.3%;
+    margin-left: -500px;
+    margin-top: 45px;
     width: 35%;
     height: 30%;
 }
