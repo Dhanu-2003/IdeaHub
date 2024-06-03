@@ -76,6 +76,9 @@ body, html {
     border: 1px solid black;
     cursor:pointer;
 }
+.det-but:hover{
+    filter: brightness(1.2);
+}
 
 .semi-circle{
     width: 10%;
@@ -270,6 +273,17 @@ cursor: pointer;
     width: 35%;
     height: 30%;
 }
+.mobile-cart{
+    display: none;
+    position: absolute;
+    display: flex;
+    border-radius: 0px;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 7%;
+    margin-top: -70px;
+    border-radius: 0px;
+}
 .text2{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -284,6 +298,22 @@ cursor: pointer;
     cursor: pointer;
     position: relative;
 }
+.outer-but{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 50px;
+    right: 10%;
+    height:4%;
+    
+    width:230px;
+    padding-top: 0%;
+    background-color:#CD5C5C;
+    color:white;
+    border: none;
+    border-radius:20px;
+    cursor: pointer;
+    position: absolute;
+}
 
 .text2:hover{
     /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); Add shadow on hover */
@@ -294,10 +324,36 @@ cursor: pointer;
 .no-hover:hover {
     border: none; /* Remove border on hover */
     
-    padding-left: 2%; /* Reset padding-left on hover */
-    padding-top: initial; /* Reset padding-top on hover */
+     /* Reset padding-top on hover */
     background-color: #CD5C5C;
 }
+.heading{
+    font-family:system-ui;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    margin-top:0px;
+}
+.search{
+    position: absolute;
+    width: 300px;
+    height: 5%;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 10%;
+    padding-left: 0.5%;
+    
+}
+input::placeholder{
+    font-size: 20px;
+    transform: translateY(2px);
+}
+#search{
+    font-size: 15px;
+}
+
+
 @media only screen and (min-width:951px) and (max-width:1200px){
     .login-form input{
         position: absolute;
@@ -397,6 +453,33 @@ cursor: pointer;
     cursor: pointer;
     }
     
+    .box{
+        margin-top: 190px;
+        margin-bottom: 5px;
+        height: 55%;
+    }
+
+    .search{
+        margin-top: 120px;
+    }
+    .outer-but{
+        margin-top: 80px;
+        width: 305px;
+        height: 5%;
+    }
+    .heading{
+        margin-top:40px;
+        font-size: 18px;
+    }
+    .redtop{
+        height: 15%;
+    }
+    .cart-sec{
+        display: none;
+    }
+    .text2{
+        border-radius: opx;
+    }
 }
 
 @media only screen and (min-width:750px) and (max-width:950px){
