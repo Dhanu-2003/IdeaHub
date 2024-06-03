@@ -52,6 +52,7 @@ body, html {
     overflow-y: auto;
     justify-content: space-around;
 }
+
 .small-box{
     width: 250px;
     height: 250px;
@@ -364,6 +365,22 @@ input::placeholder{
     margin-top: 5px;
     right: 10%;
 }
+.details{
+    position: absolute;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.details label{
+    margin-left: -50%;
+    width: 80%;
+}
+.details input{
+    border-radius: 20px;
+    width: 60%;
+    margin-top: 5%;
+}
 
 @media only screen and (min-width:951px) and (max-width:1200px){
     .login-form input{
@@ -537,6 +554,20 @@ input::placeholder{
     .text3:hover{
         border:1px solid black;
         transform: scale(1.1);
+    }
+    .details{
+        
+        flex-direction:column;
+        
+    }
+    .details label{
+        margin-left: 4%;
+        width: 80%;
+    }
+    .details input{
+        border-radius: 20px;
+        width: 90%;
+        margin-top: 5%;
     }
 }
 

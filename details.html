@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="static/style.css">
     </head>
     <style>
-
+        
         .rating {
             display: flex;
             flex-direction: row-reverse;
@@ -19,101 +19,9 @@
         .rating input {
             display: none;
         }
-        table.styled-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 6%;
-            font-size: 18px;
-            text-align: left;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        table.styled-table thead tr {
-            background-color: #df6e6e;
-            background-image: linear-gradient(#CD5C5C);
-            color: #ffffff;
-            text-align: left;
-            font-weight: bold;
-        }
-        
-        table.styled-table th,
-        table.styled-table td {
-            padding: 12px 15px;
-            border: 1px solid #dddddd;
-        }
-        
-        table.styled-table tbody tr {
-            border-bottom: 1px solid #dddddd;
-        }
-        
-        table.styled-table tbody tr:nth-of-type(even) {
-            background-color: #f3f3f3;
-        }
-        
-        table.styled-table tbody tr:last-of-type {
-            border-bottom: 2px solid #CD5C5C;
-        }
-        
-        table.styled-table tbody tr.active-row {
-            font-weight: bold;
-            color: #009879;
-        }
-        input[type="text"], select, input[list] {
-            width: 100%;
-            padding: 8px;
-            margin: 4px 0;
-            box-sizing: border-box;
-        }
-
-        .rating label {
-            font-size: 3rem;
-            color: #ccc;
-            cursor: pointer;
-            transition: color 0.3s;
-            
-        }
-        
-
-        .rating label:hover,
-        .rating label:hover ~ label,
-        .rating input:checked ~ label {
-           color: gold;
-            
-            
-        }
-        .check{
-            
-            margin-top: -30%;
-            margin-left: 56%;
-        }
        
-        .search{
-            position: absolute;
-            width: 20%;
-            height: 5%;
-            border-radius: 20px;
-            border: 1px solid black;
-            margin-top: -3%;
-            margin-left: 10%;
-            padding-left: 0.5%;
-            
-        }
-        input::placeholder{
-            font-size: 20px;
-            transform: translateY(2px);
-        }
-        #search{
-            font-size: 15px;
-        }
-        .small-box{
-            width: 20%;
-            height: 30vh;
-            border-radius: 30px;
-            border: 2px solid black;
-            margin-top: 0%;
-            margin-left: 2%;
-            margin-bottom: 1%;
-        }
+        
+        
         .box1{
             display: flex;
             flex-direction: row;
@@ -170,7 +78,7 @@
         <div class="main">
             <div class="redtop">
                 <div class="black-box" style="position:absolute;margin-top: 0%;height:15%;">
-                    <P style="color: white; margin-top:0%; margin-left:50%;">SLOGAN</P>
+                    <P style="text-align:center;color: white; margin-top:0%;">SLOGAN</P>
                 </div>
                 <!-- Red rectangle -->
                 <div class="semi-circle" style="position:absolute;">
@@ -181,9 +89,15 @@
                 
                
                 <p class="text1" style="position:absolute;margin-top:1.5%;margin-left:3%">LOGO</p>
-
-                <div class="semi-circle" style="position:absolute;margin-left:96%;margin-top:0%;background-color:white;">
-                </div>
+                
+                <div class="semi-circle-2" >
+                    
+                    <p class="hello"><b>Hello User</b></p>
+                    <div class="mobile-but">
+                        <button class="text3" style="margin-top:25px;margin-left:-100px;border-radius: 0px;">PROFILE</button>
+                        <button class="text3" style="margin-top:75px;margin-left:-100px;border-radius: 0px;">LOGOUT</button>
+                    </div>
+                    <a href="#" class="aboutus"  onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"><b>About Us</b></a>
 
                 <div class="cart-sec" style="position: absolute;">
                     <button class="text2 no-hover" style="width: fit-content;">PROTOTYPE</button>
@@ -193,40 +107,38 @@
                     <button class="text2 no-hover" style="border-radius: 0px;">PROFILE</button>
                     <button class="text2 no-hover" style="border-radius: 0 0 30px 0;">LOGOUT</button>
                 </div>
+                </div>
                 
-                
-                
-            </div>
-            
-            <div class="black-box" style="margin-top: 37.5%;"><P class="basictxt" style="color: white; font-size:37px; margin-left:40%; font-style:italic;font-weight:bold;">CONTACT DETAILS</P></div>
-            <p class="login" style="margin-top: -40%;margin-left:46%">DETAILS</p>
-            <div class="box" style="box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);">
-                
-                    
-                        <label style="width:100%; margin-left:10%;margin-top:5%" for="Name"><b> Name</b> (Title of product or component)</label>
-                       <input style="width:50%; margin-left:5%;margin-top:5%;height:10%;border-radius:15px" type="text" id="Name" name="Name" required>
-                       <div style="margin-top: 5%;">
-                       <label style="width:100%; margin-left:10%;" for="Description"><b> Description</b> (product or component)</label>
-                       </div>
-                       
-                       <textarea style="width:50%; margin-left:45%;margin-top:-5%;height:20%;border-radius:15px;resize:none;border:1px solid black" type="text" id="Description" name="Description" required></textarea>
-                    
-                       <label style="width:100%; margin-left:10%;margin-top:3%" for="Date"><b> Available Date</b> (Min 2 days from now)</label>
-                       <input style="width:50%; margin-left:5%;margin-top:3%;height:10%;border-radius:15px" type="text" id="Date" name="Date" required>
-
-                       <label style="width:100%; margin-left:10%;margin-top:3%" for="Time"><b> Available Time</b> (From 10 am to 5 pm)</label>
-                       <input style="width:50%; margin-left:5%;margin-top:3%;height:10%;border-radius:15px" type="text" id="Time" name="Time" required>
-
-                       <button type="submit" class="button1" style="color: white; font-size:17px;margin-bottom:2%;width:10%;margin-left:50%">Request</button>
-
-                       <p style="margin-left: 5%;margin-top:-1%"><b style="color:#CD5C5C">Note:</b> 
-                        You will get a call back within 2 days. Above mentioned data is just for reference. The data collected on the time of conversation will be taken considaration</p>
-
                 
             </div>
            
             
+            <div class="box" style="margin-top:98px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);overflow-x:auto">
+                <div class="details">
                 
+                <label  for="Name"><b> Name</b> (Title of product or component)</label>
+                <input  type="text" id="Name" name="Name" required>
+            </div> 
+            
+                
+                
+                
+                
+            </div>
+            
+                
+               
+                
+            
+            
+               
+                <P class="heading"><B>DETAILS</B></P>
+                <div class="mobile-cart">
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge">PROTOTYPE</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge">COMPONENTS</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge;">CART</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">ORDERS</button>
+                </div>
             
             
         </div>
@@ -246,20 +158,4 @@
             button.classList.add('successful');
         },2000)
     }
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const stars = document.querySelectorAll('.rating label');
-        stars.forEach(star => {
-            star.addEventListener('change', function () {
-                const ratingValue = this.previousElementSibling.value;
-                this.parentNode.querySelectorAll('label').forEach(label => {
-                    label.style.color = '#ccc';
-                });
-                for (let i = 5; i > ratingValue; i--) {
-                    this.parentNode.querySelectorAll('label')[i].style.color = '#FFD700';
-                }
-            });
-        });
-    });
-    
 </script>
