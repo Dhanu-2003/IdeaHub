@@ -359,6 +359,11 @@ input::placeholder{
     position:absolute;
     margin-left:-100px;
 }
+.check{
+    position: absolute;    
+    margin-top: 5px;
+    right: 10%;
+}
 
 @media only screen and (min-width:951px) and (max-width:1200px){
     .login-form input{
@@ -558,6 +563,10 @@ input::placeholder{
 
 }
 @media only screen and (min-width:451px) and (max-width:749px){
+
+    .aboutus{
+        margin-left: -400px;
+    }
     .login-container{
         width: 65%;
         height: 58%;
