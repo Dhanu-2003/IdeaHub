@@ -367,24 +367,27 @@ input::placeholder{
 }
 .details {
     display: flex;
+    
     flex-wrap: wrap;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     position:relative;
     margin-bottom: 5px;
+
+    flex-direction: row;
     
 }
 
 
 .box-details{
-    position: absolute;
+    position: relative;
     width: 80%;
     height: 60%;
-    margin-top: 100px   ;
+    margin-top: 70px   ;
     border-radius: 0 0 0 0;
     background-color: #FFFFFF;
     display: flex;
-    flex-wrap: wrap;
+    
     margin-left: 10%;
     overflow-y: auto;
     justify-content: space-around;
@@ -430,14 +433,15 @@ input::placeholder{
 }
 
 .details textarea{
-    flex: 2 1 auto;
-    min-width:200px;
-    border-radius:15px;
+    
     resize:none;
     border:1px solid black;
-    height:40%;
+    height: 40px;
     padding-left: 8px;
+    flex: 2 1 auto;
+    border-radius: 15px;
     margin-right: 10px;
+    min-width: 200px; 
 }
 
 @media only screen and (min-width:951px) and (max-width:1200px){
@@ -459,6 +463,7 @@ input::placeholder{
        
     }
     .box-details{
+        flex-wrap: wrap;
         flex-direction:initial;
     }
 }
@@ -470,6 +475,7 @@ input::placeholder{
     }
    
     .box-details{
+        flex-wrap: wrap;
         flex-direction:initial;
     }
     .login-container{
@@ -637,6 +643,7 @@ input::placeholder{
        
     }
     .box-details{
+        flex-wrap: wrap;
         flex-direction:initial;
     }
     .login-form input{
@@ -668,6 +675,7 @@ input::placeholder{
        
     }
     .box-details{
+        flex-wrap: wrap;
         flex-direction:initial;
     }
     .login-form input{
