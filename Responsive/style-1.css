@@ -1,0 +1,32 @@
+.Example {
+    display: flex;
+    overflow-x: scroll;
+    width: 20%;
+   /*  background-color: black; */
+}
+
+.prototype{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px black solid;
+}
+.pro-img{
+    height: 80%;
+    width: 80%;
+}
+.title{
+    display: block;
+    text-align: center;
+}
+.det-but{
+    width: 310%;
+}
+
+.sub-ex {
+
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: gray;
+}
