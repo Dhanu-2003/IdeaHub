@@ -134,7 +134,7 @@
         <div class="main">
             <div class="redtop">
                 <div class="black-box" style="position:absolute;margin-top: 0%;height:15%;">
-                    <P style="color: white; margin-top:0%; margin-left:50%;">SLOGAN</P>
+                    <P style="text-align:center;color: white; margin-top:0%;">SLOGAN</P>
                 </div>
                 <!-- Red rectangle -->
                 <div class="semi-circle" style="position:absolute;">
@@ -145,9 +145,15 @@
                 
                
                 <p class="text1" style="position:absolute;margin-top:1.5%;margin-left:3%">LOGO</p>
-
-                <div class="semi-circle" style="position:absolute;margin-left:96%;margin-top:0%;background-color:white;">
-                </div>
+                
+                <div class="semi-circle-2" >
+                    
+                    <p class="hello"><b>Hello User</b></p>
+                    <div class="mobile-but">
+                        <button class="text3" style="margin-top:25px;margin-left:-100px;border-radius: 0px;">PROFILE</button>
+                        <button class="text3" style="margin-top:75px;margin-left:-100px;border-radius: 0px;">LOGOUT</button>
+                    </div>
+                    <a href="#" class="aboutus"  onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"><b>About Us</b></a>
 
                 <div class="cart-sec" style="position: absolute;">
                     <button class="text2 no-hover" style="width: fit-content;">PROTOTYPE</button>
@@ -157,14 +163,19 @@
                     <button class="text2 no-hover" style="border-radius: 0px;">PROFILE</button>
                     <button class="text2 no-hover" style="border-radius: 0 0 30px 0;">LOGOUT</button>
                 </div>
-                
+                </div>
                 
                 
             </div>
-            
-            <div class="black-box" style="margin-top: 37.5%;"><P class="basictxt" style="color: white; font-size:37px; margin-left:40%; font-style:italic;font-weight:bold;">CONTACT DETAILS</P></div>
-            <p class="login" style="margin-top: -41%;margin-left:46%">DETAILS</p>
-            <div class="box" style="overflow-x:scroll; display:flex;flex-direction: column;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);height:65%">
+
+            <P class="heading"><B>DETAILS</B></P>
+                <div class="mobile-cart">
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge">PROTOTYPE</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge">COMPONENTS</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge;">CART</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">ORDERS</button>
+                </div>
+            <div class="box" style="overflow-y:auto; display:flex;flex-direction: row;margin-top:50px;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);">
                 
                 <table>
                     <tr>
@@ -278,9 +289,157 @@
                     </tr>
                     
                 </table>
-                            <button class="button1" style="width: 6%;margin-top:2%;margin-bottom:2%;margin-left:50%; ">Sign Up</button>
+                <div class="details" style="display: flex; justify-content: center; margin-top: auto; align-items: center;">
+                    <button type="submit" class="button2">Sign Up</button>
+                </div>
             </div>
 
+
+
+
+
+            <div class="box-mobile" >
+                
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="fname" name="fname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="lname" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            <select style="width: 100%;margin-left:-10%" id="gender" name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="non-binary">Non-Binary</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </td></tr>
+                        <tr></tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="otp">OTP</label></td>
+                        <td>
+                            <input style="width: 40%;margin-left:-10%" class="ph" style="width: 20%;" type="text" id="otp" name="otp" placeholder="OTP" required>
+                            <button style="width: 40%;margin-left:5%;height:30px" class="button1" type="button">Get OTP</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age</label></td>
+                        <td>
+                            <input style="width: 30%;margin-left:-10%" list="age1" id="age" name="age" required>
+                            <datalist id="age1">
+                                <script>
+                                    for (let i = 1; i <= 100; i++) {
+                                        document.write(`<option value="${i}">`);
+                                    }
+                                </script>
+                            </datalist>
+                        </td>
+                    </tr>
+                        
+                    
+                    <tr>
+                        <td><label for="degree">Degree</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="degree" name="degree" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pno">Mobile Number</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="pno" name="pno" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="college">College</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="college" name="college" required></td></tr>
+                        <tr>
+                        <td><label  for="yog">YOG</label></td>
+                        <td>
+                            <input style="width:30%;margin-left:-10%" style="width: 50%;" list="yog1" id="yog" name="yog" required>
+                            <datalist id="yog1">
+                                <script>
+                                    for (let i = 1; i <= 5; i++) {
+                                        document.write(`<option value="${i}">`);
+                                    }
+                                </script>
+                            </datalist>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4"><div class="line"></div></td>
+                    </tr>
+                </table>
+                    <table>
+
+                    <tr>
+                        <td>
+                            <label style="font-weight: bold;" for="address">Address</label>
+                        </td>
+                    </tr>
+                    <tr><td style="width:30%">
+                        <label for="dn">Door No</label>
+                    </td>
+                    <td><input  type="text" id="dn" name="dn" required></td></tr>
+                    <tr>
+                    <td>
+                        <label for="street">Street</label>
+                    </td>
+                    <td><input type="text" id="street" name="street" required></td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="area">Area</label>
+                    </td>
+                    <td><input type="text" id="area" name="area" required></td>
+                    </tr>
+
+                    <tr><td>
+                        <label for="city">City</label>
+                    </td>
+                    <td><input type="text" id="city" name="city" required></td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="state">State</label>
+                    </td>
+                    <td><input type="text" id="state" name="state" required></td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <label for="pincode">Pincode</label>
+                    </td>
+                    <td><input type="text" id="pincode" name="pincode" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"><div class="line"></div></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="pass" name="password" required></td></tr>
+                    <tr>
+                        <td><label for="cpass">Confirm Password</label></td>
+                        <td><input style="width: 100%;margin-left:-10%" type="text" id="cpass" name="cpass" required></td>
+                    </tr>
+                    
+                </table>
+                <div class="details" style="display: flex; justify-content: center; margin-top: auto; align-items: center;">
+                    <button type="submit" class="button2">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+            
            
             
                 

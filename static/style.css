@@ -53,6 +53,20 @@ body, html {
     justify-content: space-around;
 }
 
+.box{
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    margin-top: 100px   ;
+    border-radius: 0 0 0 0;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    overflow-y: auto;
+    justify-content: space-around;
+}
+
 .small-box{
     width: 250px;
     height: 250px;
@@ -165,6 +179,7 @@ text-align: center;
     border: 1px solid black; /* Specify border style */
     opacity: 1;
 }
+
 .box label{
     
     
@@ -435,6 +450,7 @@ input::placeholder{
     border: 1px solid black;
     height: 53%;
 }
+
 .details label {
     flex: 1 1 auto;
     min-width: 150px; /* Adjust as needed */
@@ -473,6 +489,9 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+}
+.box-mobile{
+    display: none;
 }
 
 @media only screen and (min-width:951px) and (max-width:1200px){
@@ -659,6 +678,28 @@ input::placeholder{
     .text3:hover{
         border:1px solid black;
         transform: scale(1.1);
+    }
+    .box-sign{
+        display: none;
+    }
+    .box-mobile{
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        margin-top: 100px   ;
+        border-radius: 0 0 0 0;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        overflow-y: auto;
+        justify-content: space-around;
+        overflow-y:auto; 
+        display:flex;
+        flex-direction: row;
+        margin-top:50px;
+        gap:10px;
+        box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);
     }
     
     
