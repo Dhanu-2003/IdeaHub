@@ -1,47 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge, IE=chrome" />
         <title>PROTOTYPE</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="static/style.css">
     </head>
     <style>
-        .check{
-            
-            margin-top: -30%;
-            margin-left: 56%;
-        }
+        
        
-        .search{
-            position: absolute;
-            width: 20%;
-            height: 5%;
-            border-radius: 20px;
-            border: 1px solid black;
-            margin-top: -3%;
-            margin-left: 10%;
-            padding-left: 0.5%;
-            
-        }
-        input::placeholder{
-            font-size: 20px;
-            transform: translateY(2px);
-        }
-        #search{
-            font-size: 15px;
-        }
-        .small-box{
-            width: 20%;
-            height: 30vh;
-            border-radius: 30px;
-            border: 2px solid black;
-            margin-top: 0%;
-            margin-left: 2%;
-            margin-bottom: 1%;
-        }
+        
+        
         .box1{
             display: flex;
             flex-direction: row;
@@ -79,36 +49,6 @@
            
            
            
-        }
-        .scrollable {
-            overflow-x: auto;
-        }
-        .line{
-            width: 100%;
-            height: 0%;
-            box-shadow:0 0 7px 5px rgba(143, 23, 23, 0.1) ;
-            
-        }
-        .in{
-            display:block !important;
-            width:15% !important;
-            height:25px !important;
-            
-        }
-       
-        .button2{
-            
-            height:40px;
-            width: 8%;
-            
-            margin-bottom:1%;
-            margin-left:50%;
-            border-radius:10px;
-            background: #CD5C5C;
-            cursor: pointer;
-        }
-        .button2:hover{
-            transform: scale(1.1);
         }
         table.styled-table {
             width: 100%;
@@ -161,9 +101,6 @@
         .wide-table {
             width: 200%;
         }
-        .large{
-            height: 15% !important;
-        }
        
         #requestbutton{
             background-color: #CD5C5C;
@@ -182,7 +119,7 @@
         <div class="main">
             <div class="redtop">
                 <div class="black-box" style="position:absolute;margin-top: 0%;height:15%;">
-                    <P style="color: white; margin-top:0%; margin-left:50%;">SLOGAN</P>
+                    <P style="text-align:center;color: white; margin-top:0%;">SLOGAN</P>
                 </div>
                 <!-- Red rectangle -->
                 <div class="semi-circle" style="position:absolute;">
@@ -193,9 +130,15 @@
                 
                
                 <p class="text1" style="position:absolute;margin-top:1.5%;margin-left:3%">LOGO</p>
-
-                <div class="semi-circle" style="position:absolute;margin-left:96%;margin-top:0%;background-color:white;">
-                </div>
+                
+                <div class="semi-circle-2" >
+                    
+                    <p class="hello"><b>Hello User</b></p>
+                    <div class="mobile-but">
+                        <button class="text3" style="margin-top:25px;margin-left:-100px;border-radius: 0px;">PROFILE</button>
+                        <button class="text3" style="margin-top:75px;margin-left:-100px;border-radius: 0px;">LOGOUT</button>
+                    </div>
+                    <a href="#" class="aboutus"  onmouseover="this.style.color='white'" onmouseout="this.style.color='black'"><b>About Us</b></a>
 
                 <div class="cart-sec" style="position: absolute;">
                     <button class="text2 no-hover" style="width: fit-content;">PROTOTYPE</button>
@@ -205,15 +148,16 @@
                     <button class="text2 no-hover" style="border-radius: 0px;">PROFILE</button>
                     <button class="text2 no-hover" style="border-radius: 0 0 30px 0;">LOGOUT</button>
                 </div>
-                
+                </div>
                 
                 
             </div>
+           
             
-            <div class="black-box" style="margin-top: 37.5%;"><P class="basictxt" style="color: white; font-size:37px; margin-left:40%; font-style:italic;font-weight:bold;">CONTACT DETAILS</P></div>
-            <p class="login" style="margin-top: -41%;margin-left:46%">PRODUCT</p>
-            <div class="box" style="display:flex;flex-direction: column;gap:10px;box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);height:67%">
-                <p  style="margin-top:0%;margin-left:45%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold">PRODUCT LIST</p>
+            <div class="box" style="box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);">
+                
+                
+                <p  style="justify-content:center;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold">PRODUCT LIST</p>
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -245,45 +189,45 @@
                     </tbody>
                 </table>
 
-                <p  style="margin-left:3%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold">BILLING DETAILS</p>
-                <div class="login-container" style="margin-left:3%;margin-top:0%;border:1px solid black;box-shadow:None;height:55%">
-                    
+
+                <div class="login-container place_order_mobile" style="justify-content:space-around;margin-left:0%;margin-top:20px;border:1px solid black;box-shadow:None;height:370px;width:500px">
+                    <p  style="margin-top:2px;margin-left:3%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold">BILLING DETAILS</p>
                     <table style="margin-top:-2%">
                         <tr>
                             <td><label for="Name">Name</label></td>
-                            <td><input style="width:100%" type="text" id="Name" name="Name" required></td>
+                            <td><input style="width:200px" type="text" id="Name" name="Name" required></td>
                         </tr>
                         <tr>
                             <td><label for="Organization">Organization</label></td>
-                            <td><input type="text" id="Organization" name="Organization" required></td>
+                            <td><input style="width:200px" type="text" id="Organization" name="Organization" required></td>
                         </tr>
                         <tr>
                             <td><label for="Address Line 1">Address Line 1</label></td>
-                            <td><input  type="text" id="Address Line 1" name="Address Line 1" required></td>
+                            <td><input style="width:200px" type="text" id="Address Line 1" name="Address Line 1" required></td>
                         </tr>
                         <tr>
                             <td><label for="Address Line 2">Address Line 2</label></td>
-                            <td><input  type="text" id="Address Line 2" name="Address Line 2" required></td>
+                            <td><input style="width:200px" type="text" id="Address Line 2" name="Address Line 2" required></td>
                         </tr>
                         <tr>
                             <td><label for="Address Line 3">Address Line 3</label></td>
-                            <td><input  type="text" id="Address Line 3" name="Address Line 3" required></td>
+                            <td><input style="width:200px" type="text" id="Address Line 3" name="Address Line 3" required></td>
                         </tr>
                         <tr>
                             <td style="width:50%"><label  for="Phone Number">Phone Number</label></td>
-                            <td><input  type="text" id="Phone Number" name="Phone Number" required></td>
+                            <td><input style="width:200px" type="text" id="Phone Number" name="Phone Number" required></td>
                         </tr>
                         <tr>
                             <td><label for="Mail ID">Mail ID</label></td>
-                            <td><input  type="text" id="Mail ID" name="Mail ID" required></td>
+                            <td><input style="width:200px" type="text" id="Mail ID" name="Mail ID" required></td>
                         </tr>
                     </table>
                    
                 </div>
-                <div class="login-container" style="margin-left:50%;margin-top:-28.5%;border:1px solid black;box-shadow:None;height:55%">
-                    
-                    <table>
-                        <P style="margin-top:-2%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold"> REFERRED BY</P>
+
+                <div class="login-container" style="margin-left:0%;margin-top:20px;border:1px solid black;box-shadow:None;height:200px;width:350px">
+                    <p  style="margin-left:3%;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';font-size:20px;font-weight:bold">REFERRED BY</p>
+                    <table style="margin-top:-2%">
                         <tr>
                             <td style="width:40%"><label for="User ID">User ID</label></td>
                             <td><input style="width:100%" type="text" id="User ID" name="User ID" required></td>
@@ -293,40 +237,41 @@
                             <td><input type="text" id="Ph No" name="Ph No" required></td>
                         </tr>
                     </table>
+                   
                 </div>
-                <div class="login-container" style="width:85%;margin-left:3%;margin-top:13%;border:1px solid black;box-shadow:None;height:100%">
-                    
-                    
-                </div>
-                            <button class="button2" >Place Order</button>
-            </div>
 
-           
+                <div class="login-container" style="width:95%;margin-left:0%;margin-top:20px;border:1px solid black;box-shadow:None;height:400px;margin-bottom:10px">
+                    
+                    
+                </div>
+
+                <div class="details" style="display: flex; justify-content: center; margin-top: auto; align-items: center;">
+                    <button style="width:150px;" type="submit" class="button2">Place Order</button>
+                </div>
+                
+               
+               
+                
+            </div>
             
                 
+                
+            
+            
+               
+                <P class="heading"><B>PRODUCT</B></P>
+                <div class="mobile-cart">
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge">PROTOTYPE</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge">COMPONENTS</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;border-right-style:ridge;">CART</button>
+                    <button class="text2 no-hover" style="border-radius: 0px;">ORDERS</button>
+                </div>
             
             
         </div>
     </body>
 
 </html>
-<script>
-    // Get the select element
-    var ageSelect = document.getElementById("age");
-    
-    // Generate options dynamically using a loop
-    for (var i = 18; i <= 50; i++) {
-        // Create a new option element
-        var option = document.createElement("option");
-        
-        // Set the value and text of the option
-        option.value = i;
-        option.textContent = i;
-        
-        // Append the option to the select element
-        ageSelect.appendChild(option);
-    }
-</script>
 <script>
     function handlerequest(button){
         
