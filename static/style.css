@@ -446,7 +446,11 @@ input::placeholder{
     margin-right: 10px;
     min-width: 200px; /* Adjust as needed */
 }
-
+.details-column-review{
+    flex-grow: 0.7;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 .details textarea{
     
     resize:none;
@@ -457,6 +461,18 @@ input::placeholder{
     border-radius: 15px;
     margin-right: 10px;
     min-width: 200px; 
+}
+.details-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+.details-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 @media only screen and (min-width:951px) and (max-width:1200px){
@@ -485,6 +501,10 @@ input::placeholder{
 
 
 @media only screen and (min-width:200px) and (max-width:450px){
+    .details-column-review{
+        flex-grow: 0;
+        flex-wrap: wrap;
+    }
     .aboutus{
         margin-left: -350px;
     }
