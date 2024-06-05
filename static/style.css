@@ -385,7 +385,7 @@ input::placeholder{
     display: none;
 }
 .aboutus{
-    margin-top: 83px; 
+    bottom: 5%;
     color:black;
     position:absolute;
     margin-left:-100px;
@@ -534,7 +534,8 @@ input::placeholder{
         height:400px !important;
     }
     .aboutus{
-        margin-left: -350px;
+        margin-left: -900%;
+        bottom: 10%;
     }
    
     .box-details{
@@ -649,11 +650,11 @@ input::placeholder{
         
         position: absolute;
         display: flex;
-        
+        width: 100%;
         border-radius: 0px;
         flex-direction: row;
         justify-content: center;
-        margin-left: 6%;
+       
         margin-top: -70px;
         border-radius: 0px;
         align-items: center;
@@ -710,6 +711,32 @@ input::placeholder{
         gap:10px;
         box-shadow:0 0 13px 10px rgba(143, 23, 23, 0.1);
     }
+    .small-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 150px;
+        width: 100px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 4px;
+
+        position: relative;
+    }
+    .det-but{
+        position: absolute;
+        background-color: #CD5C5C;
+        color: white;
+        font-size: large;
+        border-radius: 20px;
+        width: 50%;
+        height: 10%;
+        top: 93%;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size: 10px;
+    }
     
     
 }
@@ -747,7 +774,8 @@ input::placeholder{
 @media only screen and (min-width:451px) and (max-width:749px){
 
     .aboutus{
-        margin-left: -400px;
+        margin-left: -900%;
+        bottom: 10%;
     }
     .product_mobile{
         flex-wrap: wrap !important;
@@ -821,15 +849,26 @@ input::placeholder{
     }
     .mobile-cart{
         
-        position: absolute;
+        
         display: flex;
+        width: 100%;
         border-radius: 0px;
         flex-direction: row;
         justify-content: center;
-        margin-left: 7%;
-        margin-top: -70px;
-        border-radius: 0px;
         align-items: center;
+        margin-top: -90px;
+        border-radius: 0px;
+        
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 25%;
+        
+        height: 10px;
+        
+        justify-content: space-around;
+        padding: 15px;
+        text-align: center;
     }
     
     .hello{
