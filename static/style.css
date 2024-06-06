@@ -408,7 +408,15 @@ input::placeholder{
     
 }
 
-
+.pro-det-des{
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+    width: 100%;
+    height: 250px;
+ /*    overflow-y: auto; */
+    text-align: center;
+}
 .box-details{
     position: relative;
     width: 80%;
