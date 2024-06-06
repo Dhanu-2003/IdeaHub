@@ -509,6 +509,7 @@ input::placeholder{
         margin-top: -4%; /* Remove negative margin-top */
     margin-left: 30%;
     }
+    
     .login-container{
         width: 58%;
         height: 55%;
@@ -534,6 +535,9 @@ input::placeholder{
     .details-column-review{
         flex-grow: 0;
         flex-wrap: wrap;
+    }
+    .mobile-rev{
+        width: 150px !important;
     }
     .product_mobile{
         flex-wrap: wrap !important;
@@ -759,6 +763,9 @@ input::placeholder{
     .product_mobile{
         flex-wrap: wrap !important;
     }
+    .mobile-rev{
+        width: 200px !important;
+    }
 
     .text1{
         
@@ -794,7 +801,9 @@ input::placeholder{
     .product_mobile{
         flex-wrap: wrap !important;
     }
-    
+    .mobile-rev{
+        width: 30% !important;
+    }
    
     .login-container{
         width: 65%;
