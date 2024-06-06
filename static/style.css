@@ -801,9 +801,7 @@ input::placeholder{
     .product_mobile{
         flex-wrap: wrap !important;
     }
-    .mobile-rev{
-        width: 30% !important;
-    }
+    
    
     .login-container{
         width: 65%;
