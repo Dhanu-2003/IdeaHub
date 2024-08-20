@@ -56,7 +56,6 @@ def revies():
 @app.route("/PlaceOrder")
 def placeorder():
     return "PLACE ORDER"
-
 @app.route("/product")
 def product():
     product = [
